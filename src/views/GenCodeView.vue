@@ -28,12 +28,12 @@
 </template>
 <script>
 import axios from "axios";
+require("dotenv").config();
 export default {
   data() {
     return {
       code: "",
-      webhookUrl:
-        "https://discord.com/api/webhooks/1111948616467238922/OY9-kwuoNry_jRDlzP2qyzQ6hEjhftckFrE6xa-7f2e7_yBwIVNdyAfZrnhVxFqVfyKc",
+      webhookUrl: process.env.webhookUrl,
     };
   },
   methods: {
